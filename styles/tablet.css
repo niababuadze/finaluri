@@ -1,0 +1,24 @@
+@media(max-width: 744px) {
+    .collection-container{
+        height: 480px;
+    }
+
+    .items-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(1,1fr);
+    }
+
+    .footer-container{
+        padding-inline:15px ;
+    }
+
+    /*  contact page */
+
+    .form-div h2{
+        font-size: 30px;
+    }
+    .input-div{
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}   

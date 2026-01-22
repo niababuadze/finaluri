@@ -1,0 +1,341 @@
+.font {
+  font-family: "Inter";
+}
+
+/* header */
+header {
+  position: relative;
+  background-color: #012426;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 94px;
+}
+
+/* burger menu */
+.burger-menu-div{
+  display: none;
+}
+.burger-menu-img{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.burger-menu{
+  position: absolute;
+  left: -100%;
+  top: 96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #C46A2B;
+  height: 120px;
+  width: 180px;
+}
+.menu-left{
+  animation:menu-left .4s forwards;
+}
+
+@keyframes menu-left{
+  from{
+    left: -100%;
+  }
+  to{
+    left: 0;
+  }
+}
+.burger-ul{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.burger-ul > li{
+  color: #A1C3C9;
+  font-size: 24px;
+  transition: .4s;
+}
+
+.burger-ul > li:hover{
+  color: #FFFFFF;
+}
+/* page navigation */
+
+.page-ul {
+  /* margin-left: 94px; */
+  display: flex;
+  column-gap: 72px;
+}
+
+.page-ul li {
+  font-family: "Inter";
+  color: #a1c3c9;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  transition:.4s;
+}
+
+.page-ul li:hover{
+  color: #05bcca;
+}
+
+.logo-link{
+  width: 64px;
+  height: 64px;
+}
+.site-logo{
+  width: 100%;
+  height: 100%;
+}
+
+/* search and user logo container */
+.logo-container {
+  /* margin-right: 94px; */
+  display: flex;
+  gap: 32px;
+}
+
+.logo-container img {
+  width: 12px;
+  height: 12px;
+}
+
+.logo1 {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 3px #05bcca solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* active logo */
+.logo2 {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #05bcca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* main section */
+.collection-container {
+  width: 100%;
+  height: 560px;
+  background-image: url("./images/cover.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: 32px;
+  margin-top: 72px;
+}
+
+.highlight {
+  color: #05bcca;
+}
+
+.img-container {
+  width: 32px;
+  height: 24px;
+  background-color: #c46a2b;
+  margin-top: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  transition: 0.3s;
+}
+
+.img-container:hover {
+  background-color: #7f451b;
+  cursor: pointer;
+}
+
+/*guitar card container */
+.guitar-container {
+  background-color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 50px;
+  padding: 96px 94px ;
+  
+}
+
+/* header container */
+.popular-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular {
+  color: #05bcca;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.popular-line {
+  display: block;
+  width: 190px;
+  border: 2px solid #05bcca;
+  border-radius: 10px;
+  background-color: #05bcca;
+  margin-top: 8px;
+}
+
+/* guitar cards */
+.items-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;  
+ 
+}
+
+.items-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 331px;
+  flex: 0 0 290px;
+  padding: 8px;
+  background-color: #2c4246;
+  border: 2px solid #05bcca;
+}
+
+.items-content img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  height: 220px;
+}
+
+.item-name {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d9d9d9;
+}
+
+.item-price-add {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-price {
+  font-size: 16px;
+  font-weight: 400;
+  color: #05bcca;
+}
+
+.item-btn {
+  width: 58px;
+  height: 28px;
+  background-color: #c46a2b;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.item-btn:hover {
+  background-color: #7f451b;
+  cursor: pointer;
+}
+
+
+
+
+/* footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #2C4246; 
+  padding: 30px 50px;
+}
+
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-brands {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer-title {
+  font-family: 'Inter';
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #D9D9D9;
+}
+
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.footer-list li {
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #D9D9D9;
+  line-height: 28px;
+  cursor: pointer;
+  transition:.4s; 
+}
+
+.footer-list li:hover {
+  color: #05BCCA;
+}
+.footer-text {
+  font-family: 'Inter';
+  font-size: 16px;
+  color: #D9D9D9;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-socials img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
